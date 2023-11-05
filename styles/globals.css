@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+   max-height: 100%;
+}
+
+input, textarea, select{
+ @apply border border-cyan-700 rounded-sm px-2 py-1 w-full;
+ @apply shadow-sm;
+ @apply mb-2;
+}
+
+input:focus, textarea:focus, select:focus{
+   @apply border-2 text-cyan-900 focus:outline-none focus:border-cyan-800;
+}
+
+h1{
+   @apply text-cyan-900 mb-2 text-xl;
+}
+label{
+   @apply text-cyan-900 text-sm;
+}
+
+
+
+table.basic {
+@apply w-full bg-white rounded-sm shadow-md;
+}
+
+table.basic thead tr td , table.basic thead tr th{
+   @apply text-sm text-gray-600 uppercase border-b border-gray-200 px-4 py-2;
+}
+table.basic tr td {
+@apply px-4 py-1;
+}
+
+table.basic a {
+   @apply text-white text-sm py-1 px-2 rounded-md inline-flex gap-1 mr-1 ;
+}
+
+table.basic button {
+   @apply text-white text-sm py-1 px-2 rounded-md inline-flex gap-1 mr-1 ;
+}
+
+.btn-default, .btn-red {
+   @apply px-4 py-1 rounded-md;
+}
+.btn-red{
+   @apply bg-red-700 text-white shadow-sm; 
+}
+
+.btn-primary {
+   @apply bg-cyan-900 rounded-md text-white py-1 px-4 shadow-sm;
+}
+
+.btn-default{
+   @apply bg-gray-500 text-white shadow-sm;
+}
+
+button.swal2-confirm.swal2-styled.swal2-default-outline {
+   box-shadow: none !important;
+}
